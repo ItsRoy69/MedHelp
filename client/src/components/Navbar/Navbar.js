@@ -1,39 +1,38 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import navimg from '../../assets/navimg.png';
-import './Navbar.css';
+import React from "react";
+import { Link } from "react-router-dom";
+import navimg from "./../../images/nav.png";
 
-const Navbar = () => {
+import "./style.css";
+
+export default function Navbar() {
   return (
     <>
-      <div className="main_navbar fixed-top">
-        <div className="brand-logo-name">
-          <Link to={"/"} className="brand-logo">
-            <img src={navimg} alt="img" />
-          </Link>
-        </div>
-        <div className="main-nav">
-          <ul>
-            <li>
-              <a href="/">Home</a>
-            </li>
-            <li>
-              <a href="#detail">Services</a>
-            </li>
-            <li>
-              <a href="#detail">About</a>
-            </li>
-            <li>
-              <a href="#detail">Team</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <navbar className="main_navbar fixed-top">
+          <div className="brand-logo-name">
+            <Link to={"/"} className="brand-logo">
+              <img src={navimg} alt="img" />
+            </Link>
+          </div>
+          <nav className="main-nav">
+            <ul>
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a href="#detail">Services</a>
+              </li>
+              <li>
+                <a href="#detail">About</a>
+              </li>
+              <li>
+                <a href="#detail">Team</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </navbar>
     </>
-  )
+  );
 }
-
-export default Navbar

@@ -1,11 +1,20 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
+import "./Footer.css";
 
-const Footer = () => {
+export default function Footer() {
   return (
     <>
-      Footer
+      <div className="footer">
+          <div
+            className="text-center p-3"
+          >
+            © 2021 Copyright:
+              Roy
+          </div>
+          {/* Copyright */}
+      </div>
+      {/* End of .container */}
     </>
-  )
+  );
 }
-
-export default Footer
