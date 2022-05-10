@@ -71,6 +71,7 @@ export default function CustomerSignin() {
 
   return (
     <>
+      <Navbar/>
       {mainInfo.mainUserName !== "" ? (
         <>
           <PEMs

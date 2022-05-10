@@ -50,7 +50,7 @@ export default function PaymentForm({ amount, itemStatus }) {
       try {
         const { id } = paymentMethod;
         const response = await axios.post(
-          "https://pemjoy.herokuapp.com/payment",
+          "http://localhost:5000/payment",
           {
             amount: amount,
             id,
