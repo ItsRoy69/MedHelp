@@ -7,7 +7,7 @@ import "./Team.css";
 const Team = () => {
   return (
     <>
-      <div>
+      <div id='team'>
         <div className="teammidbanner">
             <div className="teammidbannerpicdetails">
               <div className="badge">

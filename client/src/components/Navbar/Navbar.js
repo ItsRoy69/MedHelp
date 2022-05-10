@@ -2,12 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import navimg from "./../../images/nav.png";
 
-import "./style.css";
+import "./Navbar.css";
 
 export default function Navbar() {
   return (
     <>
-      <navbar className="main_navbar fixed-top">
+      <div className="main_navbar fixed-top">
           <div className="brand-logo-name">
             <Link to={"/"} className="brand-logo">
               <img src={navimg} alt="img" />
@@ -19,20 +19,17 @@ export default function Navbar() {
                 <a href="/">Home</a>
               </li>
               <li>
-                <a href="#detail">Services</a>
+                <a href="#services">Services</a>
               </li>
               <li>
-                <a href="#detail">About</a>
+                <a href="#about">About Us</a>
               </li>
               <li>
-                <a href="#detail">Team</a>
-              </li>
-              <li>
-                <a href="#contact">Contact</a>
+                <a href="#team">Team</a>
               </li>
             </ul>
           </nav>
-        </navbar>
+        </div>
     </>
   );
 }

@@ -6,7 +6,7 @@ import aboutus2 from "../../../images/aboutus2.png";
 const AboutUs = () => {
   return (
     <>
-      <div className="container mt-5">
+      <div className="container mt-5" id='about'>
         <div className="badge">
           <h1>About Us</h1>
         </div>

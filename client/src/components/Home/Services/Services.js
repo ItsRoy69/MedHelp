@@ -13,7 +13,7 @@ export default function Services({ customerDetails }) {
   // console.log("from services ", customerDetails);
   return (
     <>
-      <div className="container mt-5">
+      <div className="container mt-5" id="services">
         <div className="badge">
           <h1>Our Services</h1>
         </div>
