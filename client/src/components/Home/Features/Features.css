@@ -1,7 +1,7 @@
 .carousel-item{
     padding-top: 8vh;
     width: 100vw;
-    height: 100vh;
+    height: 100vh;    
 }
 
 .carousel-caption{
@@ -9,11 +9,10 @@
     height: 300px;
     align-items: center;
     text-align: center;
-    background-color: #C4C4C4;
-    opacity: 0.6;
     margin-left: 12vw;
     border-radius: 20px;
     color: #ffff;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 
 .caption{
@@ -22,7 +21,7 @@
 
 .caption h1, .caption p{
     font-weight: bold;
-    color: #000000;
+    color: #ffff;
     margin-bottom: 0;
-    opacity: 2;    
+    opacity: 2;
 }

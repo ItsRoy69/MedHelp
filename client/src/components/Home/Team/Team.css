@@ -56,12 +56,11 @@
   .teamdetailcardinfo{
     text-align: center;
     align-items: center;
-    background-color: #F4FAEB;
+    background-color: #ffff;
     width: 250px;
     height: 250px;
     border-radius: 25px;
-    box-shadow: 1px 5px 15px #D1DFBB;
-    box-shadow: 1px 5px 5px #F8F386;
+    box-shadow: 2px 4px 4px 0px #00000040;
     align-items: center;
     text-align: center;
     padding-top: 50px;

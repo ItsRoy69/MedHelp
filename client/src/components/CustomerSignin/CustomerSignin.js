@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { createCustomer } from "../../actions/customer";
 import PEMs from "../PEMs/PEMs";
-import "./style.css";
+import "./CustomerSignin.css";
+import Navbar from "../Navbar/Navbar";
 
 export default function CustomerSignin() {
   // -----------------------------SIGN UP -------------------------------------------------
@@ -17,7 +18,7 @@ export default function CustomerSignin() {
   var signUpHandler = (e) => {
     e.preventDefault();
     if (details.passWord === "" || details.email === "") {
-      alert("Invalide details!!!");
+      alert("Invalid details!!!");
     } else {
       setDetails({
         userName: "",
@@ -48,7 +49,7 @@ export default function CustomerSignin() {
 
   const Login = () => {
     if (info.userName === "" || info.passWord === "") {
-      alert("Invalide details!!!");
+      alert("Invalid details!!!");
     } else {
       if (
         customers.filter(
@@ -84,17 +85,13 @@ export default function CustomerSignin() {
         </>
       ) : (
         <>
+          <Navbar/>
           <div className="signinBody">
             <div className="sectionStyle">
               <div className="container">
                 <div className="row full-heightStyle justify-content-center">
-                  <div className="col-12 text-center align-self-center py-5">
-                    <center className="centerStyle">WELCOME TO PEM JOY</center>
-                    <div className="sectionStyle pb-5 pt-5 pt-sm-2 text-center">
-                      <h6 className="mb-0 pb-3 h6Style">
-                        <span>Log In </span>
-                        <span>Sign Up</span>
-                      </h6>
+                  <div className="col-12 text-center align-self-center py-5">                    
+                    <div className="sectionStyle pb-5 pt-5 pt-sm-2 text-center">                      
                       <input
                         className="checkbox"
                         type="checkbox"
@@ -108,7 +105,7 @@ export default function CustomerSignin() {
                           <div className="card-front">
                             <div className="center-wrap">
                               <div className="sectionStyle text-center">
-                                <h4 className="mb-4 pb-3 h4Style signColor">
+                                <h4 className="mb-4 h4Style signColor">
                                   Log In
                                 </h4>
                                 <div className="form-group mt-2">
@@ -143,23 +140,13 @@ export default function CustomerSignin() {
                                     }
                                   />
                                 </div>
-
-                                <br />
                                 <button
                                   type="submit"
                                   className="btn btn-primary"
                                   onClick={Login}
                                 >
                                   LOG IN
-                                </button>
-                                <p className="mb-0 mt-4 text-center pStyle">
-                                  <a
-                                    href="#0"
-                                    className="link buttonStyle linkStyle"
-                                  >
-                                    Forgot your password?
-                                  </a>
-                                </p>
+                                </button>                                                              
                               </div>
                             </div>
                           </div>
@@ -167,9 +154,10 @@ export default function CustomerSignin() {
                           {/* --------------------------------------------------SIGN UP------------------------------------------------- */}
                           <div className="card-back">
                             <div className="center-wrap">
-                              <div className="sectionStyle text-center">
-                                <h4 className="mb-4 pb-3 signColor">Sign Up</h4>
-
+                              <div className="sectionStyle text-center" id="reg-log">
+                                <h4 className="mb-4 h4Style signColor" style={{marginTop: "50px"}}>
+                                  Sign Up
+                                </h4>
                                 <div className="form-group mt-2">
                                   <input
                                     type="text"
@@ -209,7 +197,7 @@ export default function CustomerSignin() {
                                       rel="noopener noreferrer"
                                      height="10px"
                                       >
-                                    GetLocation
+                                    Location
                                    </a>
                                 <div className="form-group mt-2">
                                   <input
@@ -243,7 +231,6 @@ export default function CustomerSignin() {
                                     }
                                   />
                                 </div>
-                                <br />
                                 <button
                                   type="submit"
                                   className="btn btn-primary"
@@ -262,7 +249,6 @@ export default function CustomerSignin() {
               </div>
             </div>
           </div>
-          <br />
         </>
       )}
     </>
