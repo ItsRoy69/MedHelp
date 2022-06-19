@@ -1,0 +1,33 @@
+/*=============== TIPS ===============*/
+.tips_container{
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem 1rem;
+    display: grid;
+  }
+  
+  .tips_data{
+    text-align: center;
+  }
+  
+  .tips_description{
+    margin-bottom: var(--mb-2);
+    text-align: justify;
+  }
+  
+  .tips_img{
+    justify-self: center;
+  }
+  
+  .tips img{ 
+    width: 400px;
+  }
+  
+  #about{
+    align-items: center;
+    padding: 40px;
+  }
+
+  .blogs__more{
+    text-align: center;
+    margin-bottom: var(--mb-1-5);
+  }

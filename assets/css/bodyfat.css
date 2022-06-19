@@ -1,0 +1,48 @@
+.bodyfat__group img{
+    width: 766px;
+}
+
+input[class="male"]:hover + svg,
+input[class="male"]:checked + svg,
+input[class="male"]:focus + svg {
+  fill: rgb(0, 109, 217);
+}
+
+input[class="female"]:hover + svg,
+input[class="female"]:checked + svg,
+input[class="female"]:focus + svg {
+  fill: rgb(204, 0, 190);
+}
+
+.male,
+.female {
+  position: absolute;
+  opacity: 0;
+}
+
+.male svg,
+.female svg {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.rating svg {
+  cursor: pointer;
+}
+
+.rating svg {
+    fill: rgb(242, 242, 242);
+    height: 3.6rem;
+    width: 3.6rem;
+    margin: 0.2rem;
+}
+
+.input{
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.body-result{
+    display: flex;
+}

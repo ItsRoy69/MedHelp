@@ -1,0 +1,30 @@
+.bmi__group img{
+    width: 300px;
+    height: 300px;
+}
+
+
+#result{
+    text-shadow: 0 0 3px rgb(255, 255, 255);
+  }
+
+#btn{
+    display: inline-block;
+  background-color: var(--first-color);
+  color: var(--title-color);
+  padding: 1rem 1.75rem;
+  border-radius: .5rem;
+  font-weight: var(--font-medium);
+  transition: .3s;
+}
+
+.home__text{
+  border-radius: 5px;
+  height: 20px;
+  padding: 5px;
+  width: 50px;
+}
+
+.home__input{
+  display: inline-block;
+}

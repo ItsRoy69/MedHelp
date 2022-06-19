@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/bodyfat.css">
+
+        <title>MedHelp</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="./index.html" class="nav__logo">
+                    <img src="assets/img/logo.png" alt="" class="nav__logo-img">
+                    MedHelp
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="./index.html" class="nav__link">Home</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link active-link">Health Tips</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="./blogs.html" class="nav__link">Blogs</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#footer" class="button button--ghost">Contact</a>
+                        </li>
+
+                        
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x'></i>
+                    </div>
+
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home container" id="home">
+                <section class="swiper-slide">
+                    <div class="home__content grid">
+                        <div class="bodyfat__group">
+                            <img src="assets/img/bodyfat.png" alt="">     
+                            <div class="body-result" id="body-result">
+                                <h1>Your body fat percentage is:  &nbsp;</h1>
+                                <h1 id="perc"></h1>
+                            </div>
+
+                        </div>
+
+                        <div class="form__data">
+                            <form action="">
+                                <div class="rating">
+                                    <label for="male">
+                                      <input
+                                        type="radio"
+                                        name="rating"
+                                        class="male"
+                                        id="male"
+                                        value="male"
+                                      />
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        class="bi bi-gender-female"
+                                        viewBox="0 0 16 16"
+                                      >
+                                        <path
+                                          fill-rule="evenodd"
+                                          d="M8 1a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM3 5a5 5 0 1 1 5.5 4.975V12h2a.5.5 0 0 1 0 1h-2v2.5a.5.5 0 0 1-1 0V13h-2a.5.5 0 0 1 0-1h2V9.975A5 5 0 0 1 3 5z"
+                                        />
+                                      </svg>
+                                    </label>
+                  
+                                    <label for="female">
+                                      <input
+                                        type="radio"
+                                        name="rating"
+                                        class="female"
+                                        id="female"
+                                        value="female"
+                                        checked
+                                      />
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        viewBox="0 0 16 16"
+                                      >
+                                        <path
+                                          fill-rule="evenodd"
+                                          d="M9.5 2a.5.5 0 0 1 0-1h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V2.707L9.871 6.836a5 5 0 1 1-.707-.707L13.293 2H9.5zM6 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"
+                                        />
+                                      </svg>
+                                    </label>
+                                </div>
+                                <div class="weight">
+                                    <label for="weight">Weight (in kg):</label>
+                                    <input type="number" id="weight" name="weight" class="input" />
+                                </div>
+
+                                <div class="wrist">
+                                    <label for="wrist">Wrist (in cm):</label>
+                                    <input type="number" id="wrist" name="wrist" class="input" />
+                                </div>
+                                
+                                <div class="waist">
+                                    <label for="waist">Waist (in cm):</label>
+                                    <input type="number" id="waist" name="waist" class="input" />
+                                </div>
+                                
+                                <div class="hip">
+                                    <label for="hip">Hip (in cm):</label>
+                                    <input type="number" id="hip" name="hip" class="input" />
+                                </div>
+
+                                <div class="forearm">
+                                    <label for="forearm">Forearm (in cm):</label>
+                                    <input type="number" id="forearm" name="forearm" class="input" />
+                                </div>
+                                
+                                <button class="button" type="button" value="Submit" id="submit" onclick="submit">
+                                    Calculate
+                                </button>
+                            </form>                            
+                        </div>
+                        
+                    </div>
+                </section>                        
+            </section>      
+            
+
+            <!--==================== OUR NEWSLETTER ====================-->
+            <section class="section newsletter" id="footer">
+                <div class="newsletter__container container">
+                    <h2 class="section__title">Our Newsletter</h2>
+                    <p class="newsletter__description">
+                        Promotion new products and sales. Directly to your inbox
+                    </p>
+
+                    <form action="" class="newsletter__form">
+                        <input type="text" placeholder="Enter your email" class="newsletter__input">
+                        <button class="button">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+            <footer class="footer section">
+                <div class="footer__container container grid">
+                    <div class="footer__content">
+                        <a href="#" class="footer__logo">
+                            <img src="assets/img/logo.png" alt="" class="footer__logo-img">
+                            MedHelp
+                        </a>
+
+                        <p class="footer__description">Medical Helps Virtually</p>
+
+                        <div class="footer__social">
+                            <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                                <i class='bx bxl-facebook'></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                                <i class='bx bxl-instagram-alt' ></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                                <i class='bx bxl-twitter' ></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer__content">
+                        <h3 class="footer__title">About</h3>
+
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Features</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">News</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__content">
+                        <h3 class="footer__title">Our Services</h3>
+
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Discounts</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Shipping mode</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__content">
+                        <h3 class="footer__title">Our Company</h3>
+
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">About us</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Our mission</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <span class="footer__copy">&#169; ItsRoy69. All rigths reserved</span>                
+            </footer>
+
+            <!--=============== SCROLL UP ===============-->
+            <a href="#" class="scrollup" id="scroll-up">
+                <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+            </a>
+
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="assets/js/bodyfat.js"></script>
+    </body>
+</html>
