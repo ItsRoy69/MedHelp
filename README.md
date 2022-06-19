@@ -1,44 +1,33 @@
-# MedHelp
+<p align="center">
 
-This is a simple website implementing Html, Css and Javascript. I am just trying to implement UI/UX designs keeping Html, Css & Js as TechStack.
+![MedHelp](https://user-images.githubusercontent.com/78967360/174472770-5af501e2-fcf0-40b8-bbf2-21bac608cc4e.png)
+
+   <h3 align="center">MedHelp</h3>
+   <p align="center"> MEDICAL HELP AT YOUR HOME</p>
+</p>
 
 <div align="center">
-  <img alt="Demo" src="![2022-06-19](https://user-images.githubusercontent.com/78967360/174469040-5ba8a4d1-cc81-4eec-a5c1-508704c209d0.png)" />
+
 </div>
 
-<br/>
+## What is MedHelp ? 🤔
 
-<center>
+MedHelp is a website where one can ato get some medical assistance which can be dealt with by staying at home. Just click on our website and you will be relieved of your medical-related stress.
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) &nbsp;
-[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com) &nbsp;
+## Deployed Link : https://itsroy69.github.io/MedHelp/
 
-</center>
+## Technologies used 💻
 
-## Built With
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![SCSS](https://img.shields.io/badge/scss-%231572B6.svg?style=for-the-badge&logo=scss&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-This project was built using these technologies.
+---
+## 🙏 Support
 
-- Html5
-- CSS3
-- Javascript
+This project needs a ⭐️ from you. Don't forget to leave a star ⭐️
 
-## Features
-
-Link : https://itsroy69.github.io/MedHelp/)
-
-**📖 Multi-Page Layout**
-
-**🎨 Styled with Material UI & Css with easy to customize colors**
-
-**📱 Fully Responsive**
-
-## Getting Started
-
-Clone down this repository. 
-# Clone the repository
-`git clone https://github.com/ItsRoy69/MedHelp.git`
-
-### Show your support
-
-Give a ⭐ if you like this website!
+---
+## Happy Contributions !!
