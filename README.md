@@ -3,7 +3,7 @@
 This is a simple website implementing Html, Css and Javascript. I am just trying to implement UI/UX designs keeping Html, Css & Js as TechStack.
 
 <div align="center">
-  <img alt="Demo" src="https://user-images.githubusercontent.com/78967360/168626737-ff62052c-a426-44b5-beb1-0405572b2176.png" />
+  <img alt="Demo" src="![2022-06-19](https://user-images.githubusercontent.com/78967360/174469040-5ba8a4d1-cc81-4eec-a5c1-508704c209d0.png)" />
 </div>
 
 <br/>
@@ -25,8 +25,7 @@ This project was built using these technologies.
 
 ## Features
 
-Link : https://itsroy69.github.io/horror/#
-
+Link : https://itsroy69.github.io/MedHelp/)
 
 **📖 Multi-Page Layout**
 
@@ -38,7 +37,7 @@ Link : https://itsroy69.github.io/horror/#
 
 Clone down this repository. 
 # Clone the repository
-`git clone https://github.com/ItsRoy69/horror.git`
+`git clone https://github.com/ItsRoy69/MedHelp.git`
 
 ### Show your support
 
