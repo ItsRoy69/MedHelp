@@ -1,0 +1,45 @@
+{
+    "name": "MedHelp",
+    "short_name": "MedHelp",
+    "start_url": ".",
+    "shortcuts": [
+      {
+        "name": "MedHelp",
+        "url": ".",
+        "icons": [
+          {
+            "src": "assets/img/logo.png",
+            "sizes": "512x512",
+            "type": "image/png"
+          },
+          {
+            "src": "assets/img/logo.png",
+            "type": "image/png"
+          },
+          {
+            "src": "assets/img/logo.png",
+            "sizes": "512x512",
+            "purpose": "maskable",
+            "type": "image/png"
+          }
+        ]
+      }
+    ],
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4DBA87",
+    "icons": [
+      {
+        "src": "assets/img/logo.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable"
+      },
+      {
+        "src": "assets/img/logo.png",
+        "sizes": "144x144",
+        "type": "image/png"
+      }
+    ]
+  }
+  
